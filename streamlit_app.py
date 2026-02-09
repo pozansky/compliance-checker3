@@ -16,7 +16,7 @@ def _ensure_project_on_syspath() -> None:
 def _get_engine():
     _ensure_project_on_syspath()
     # Import here so Streamlit caching works cleanly
-    from rag_engine import ComplianceRAGEngine
+    from rag_engine_ds import ComplianceRAGEngine
 
     return ComplianceRAGEngine()
 
